@@ -1,0 +1,29 @@
+.nav {
+  justify-content: center;
+}
+
+nav {
+  background-color: #239F34;
+  text-align: center;
+
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  padding: .5rem 1rem;
+}
+
+.icon {
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 30px;
+  text-indent: 5px;
+  padding: auto;
+
+  background-color: #00B80A;
+}

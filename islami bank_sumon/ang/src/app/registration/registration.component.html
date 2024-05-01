@@ -1,0 +1,22 @@
+
+   <div class="registration-form bg-secondary text-white">
+    <h2>User Registration</h2>
+    <form (ngSubmit)="save()" #registrationForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" >
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" >
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" >
+      </div>
+      <button type="submit" class="btn btn-light">Register</button>
+    </form>
+  </div>
+  
+
+ 

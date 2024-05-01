@@ -1,0 +1,19 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .form-container {
+    border: 1px solid #343a40;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    background-color: #343a40; /* A dark grey color */
+    color: white; /* Ensures text is readable on the dark background */
+  }
+button:hover{
+    background-color: #DBA979
+;
+}

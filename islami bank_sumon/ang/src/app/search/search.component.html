@@ -1,0 +1,48 @@
+<section class="container">
+    <div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets\images\search1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Search Details</h5>
+                    <form (ngSubmit)="userSearch()">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username </label>
+                            <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-6">
+            <form (ngSubmit)="update()">
+                <div class="mb-3">
+                    <label for="username" class="form-label">username</label>
+                    <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username">
+
+                </div>
+        
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email">
+
+                </div>
+               
+                <div class="mb-3">
+                    <label for="password" class="form-label">password</label>
+                    <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password">
+
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</section>

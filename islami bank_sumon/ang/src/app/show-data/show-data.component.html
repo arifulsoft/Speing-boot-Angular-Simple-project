@@ -1,0 +1,24 @@
+
+<div class="container">
+    <table class="table stripe">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>action</th>
+          
+        </tr>
+        <tr *ngFor="let i of fetchData">
+            <td>{{i.username}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.password}}</td>
+            <td>
+                <button (click)="update(i.username)"><i class="fa-solid fa-user-pen"></i></button>
+                <button (click)="delete(i.username)"><i class="fa-solid fa-trash-can"></i></button>
+            </td>
+            
+        </tr>
+    </table>
+</div>
+
+
