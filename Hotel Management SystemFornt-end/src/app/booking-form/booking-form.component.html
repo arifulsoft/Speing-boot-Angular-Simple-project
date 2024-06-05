@@ -1,0 +1,83 @@
+
+<app-small-navber></app-small-navber>
+
+<section class=" hh" >
+  <div class="row">
+    <div class="col-3 ">
+      <!-- <div class="background_image" style="background-image:url(https://media.cntravellerme.com/photos/64aeaec78065f76731bd4c89/16:9/w_2560,c_limit/Shangri-La-Hotel-Dubai__2018_Level-42-at-night-C.jpg)"></div> -->
+      <!-- <img src="assets\images\gallery_4.jpg" alt="" style="height: 300px; width: 400px;"> -->
+    </div>
+       
+    <div class="col-6 ff">
+      <img src="assets\images\222.jpg" alt="" style="margin-left: 150px;">
+      <!-- <h2 style="margin-left: 250px;">Booking Form</h2> -->
+      <hr>
+      <form (ngSubmit)="bookingform()" class="bt">
+          <!-- <div class="mb-3">
+              <label for="room_number" class="form-label"><b>Room Number</b></label>
+              <input type="text" class="form-control" id="room_number"   name="room_number" [(ngModel)]="room_number">
+            </div> -->
+
+      <div class="mb-3">
+          <label for="name" class="form-label"><b>Name</b></label>
+          <input type="text" class="form-control" id="name" placeholder=" Name" name="name" [(ngModel)]="name" required>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="email" class="form-label"><b>Email</b></label>
+            <input type="text" class="form-control" id="email" placeholder=" Email Address" name="email" [(ngModel)]="email" required>
+          </div>
+  
+  
+          <div class="mb-3 col">
+            <label for="phone" class="form-label"><b>Phone</b></label>
+            <input type="text" class="form-control" id="phone" placeholder=" Phone Number" name="phone" [(ngModel)]="phone" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="adulat" class="form-label"><b>Adulat</b></label>
+            <input type="number" class="form-control" id="adulat" placeholder=" Adulat Person" name="adulat" [(ngModel)]="adulat" required>
+          </div>
+  
+  
+          <div class="mb-3 col">
+            <label for="child" class="form-label"><b>Child</b></label>
+            <input type="number" class="form-control" id="child" placeholder=" Child Person" name="child" [(ngModel)]="child" required>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="passport" class="form-label"><b>Pasport</b></label>
+            <input type="text" class="form-control" id="passport" placeholder=" Passport Number" name="passport" [(ngModel)]="passport" required>
+          </div>
+  
+          <div class="mb-3 col">
+            <label for="nid" class="form-label"><b>NID</b></label>
+            <input type="number" class="form-control" id="nid" placeholder=" NId Number" name="nid" [(ngModel)]="nid" required>
+          </div>
+        </div>
+
+       
+        <input class="btn btn-primary" type="submit" value="Submit" style="margin-bottom: 20px; background-color:darkslategray">
+        <!-- <button type="submit" class="btn btn-outline-primary">Primary</button> -->
+        <!-- <button type="submit">Sumit</button> -->
+       
+      </form>
+  
+    </div>
+    <div class="col-3">
+        <!-- <img src="assets\images\booking1.avif" alt="" style="height: 300px;">
+        <img src="assets\images\booking1.avif" alt="" style="height: 300px;"> -->
+    </div>
+
+  </div>
+</section>
+
+
+<div class="contai">
+  <img src="assets\images\booking.jpg" alt="" style="height: 400px; width: 1300px;">
+</div>

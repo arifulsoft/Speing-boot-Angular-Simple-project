@@ -1,0 +1,76 @@
+<div class="row">
+    <app-small-navber></app-small-navber>
+    <div class="col-3">
+        <app-sidbar></app-sidbar>
+    </div>
+    <div class="col-9">
+        <h1 class="body" style="margin-left: 20px;">Booking List</h1>
+        <hr>
+        <table class="table stripe ">
+            <h3 style="margin-left: 300px;">Cusstomar Table</h3>
+            <tr>
+                <th> Name </th>
+                <!-- <th>Email</th> -->
+                <th>Phone</th>
+                <th>Passport</th>
+                <th>NID Number</th>
+                <th>Room Number</th>
+                <!-- <th>Check in date</th>
+                <th>Check out date</th> -->
+
+            </tr>
+            <tr *ngFor="let i of booking">
+                <td>{{i.name}}</td>
+                <!-- <td>{{i.email}}</td> -->
+                <td>{{i.phone}}</td>
+                <td>{{i.passport}}</td>
+                <td>{{i.nid}}</td>
+                <td>{{i.room_number}}</td>
+            
+                <!-- <td>{{p.checkin}}</td>
+                <td>{{p.checkout}}</td> -->
+            </tr>
+        </table>
+
+
+      
+
+
+
+        <table class="table stripe ">
+            <h3 style="margin-left: 300px;">Payment Table</h3>
+            <tr>
+                <th> Room number </th>
+                <th>Customar Id</th>
+                <th>Total bill</th>
+                <th>Pay</th>
+                <th>Due</th>
+                <th>Status</th>
+                <th>Payment type</th>
+                <th>Transaction id</th>
+               
+
+            </tr>
+            <tr *ngFor="let a of payment">
+                <td>{{a.room_number}}</td>
+                <td>{{a.customar_id}}</td>
+                <td>{{a.total_bill}}</td>
+                <td>{{a.pay}}</td>
+                <td>{{a.due}}</td>
+                <td>{{a.status}}</td>
+                <td>{{a.payment_type}}</td>
+                <td>{{a.transaction_id}}</td>
+            
+                
+            </tr>
+        </table>
+
+
+    </div>
+</div>
+
+
+<!-- {{payment|json}} -->
+
+
+<!-- ss -->

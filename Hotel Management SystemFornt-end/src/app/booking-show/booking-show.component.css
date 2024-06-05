@@ -1,0 +1,43 @@
+table,tr,th,td{
+
+
+    border: 1px solid brown;
+        border-radius: 20px;
+        text-align: center;
+        background-color:white;
+}
+ table{
+    background-color:aliceblue;
+    
+}
+
+th{
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+    border-radius: 20px;
+    text-align: center;
+} 
+/* ss */
+td:hover{
+    background-color: #4F4D5F;
+    color: white;
+    cursor: pointer;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+  h1 {
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+
+  }
+  
+
+ 

@@ -1,0 +1,131 @@
+
+
+
+<app-small-navber></app-small-navber>
+  <section class="container" style="margin-top: 20px;">
+    <div class="row">
+      
+      <div class="col-6 as">
+        <img src="assets\images\order444-removebg-preview.png" style="height: 100px; margin-left: 200px;" alt="">
+        <form (ngSubmit)="order()" class="rr">
+
+          <div class="mb-3">
+            <label for="c_id" class="form-label">Customer Id</label>
+            <input type="text" class="form-control" id="c_id" name="c_id" [(ngModel)]="c_id">
+          </div>
+      
+          <div class="mb-3">
+            <label for="f_type" class="form-label">Food Type</label>
+            <select class="form-select"  id="f_type" name="f_type" [(ngModel)]="f_type" >
+              <option selected> select food type</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Launch">Launch</option>
+              <option value="Dinner">Dinner</option>
+            </select>
+          </div>
+      
+          <div class="mb-3">
+              <label for="f_menu" class="form-label">Food Menu</label>
+              <input type="text" class="form-control" id="f_menu" name="f_menu" [(ngModel)]="f_menu">
+            </div>
+      
+            <div class="mb-3">
+              <label for="amount" class="form-label">Order Amount</label>
+              <input type="number" class="form-control" id="amount" name="amount" [(ngModel)]="amount">
+            </div>
+      
+            <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" class="form-control" id="date" name="date" [(ngModel)]="date">
+            </div>
+      
+          <button type="submit" class="btn btn-primary">Order</button>
+      
+        </form>
+      </div>
+
+      
+      <div class="col-6">
+        <section class="container" style="margin-top: 20px;">
+          <div class="row">
+              <div class="col-4">
+                  <div class="card" style="width: 10rem;">
+                      <img src="assets\images\food1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Breakfast package</h5>
+                              <h4>৳ 220</h4>
+                         
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4">
+      
+                  <div class="card" style="width: 10rem;">
+                      <img src="assets\images\lunce1.jpg" class="card-img-top"  style="height: 105px;" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Lunch package</h5>
+                          <h4>৳ 399</h4>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4">
+      
+                  <div class="card" style="width: 10rem; ">
+                      <img src="assets\images\dinner1.jpg" class="card-img-top" style="height: 100px;" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Dinner package</h5>
+                          <h4>৳ 250</h4>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 10rem;">
+                    <img src="assets\images\lunce2.png" class="card-img-top" style="height: 105px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch package</h5>
+                        <h4>৳ 399</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+    
+                <div class="card" style="width: 10rem;">
+                    <img src="assets\images\food3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Breakfast package</h5>
+                        <h4>৳ 220</h4>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+    
+                <div class="card" style="width: 10rem; ">
+                    <img src="assets\images\dinner2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinner package</h5>
+                        <h4>৳ 250</h4>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section style="margin-top: 20px;">
+    <img src="assets\images\abaaa.jpg" style="height: 400px; width: 1300px;" alt="">
+  </section>

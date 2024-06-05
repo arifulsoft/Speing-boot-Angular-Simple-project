@@ -1,0 +1,18 @@
+table,tr,th,td{
+
+
+    border: 1px solid brown;
+        text-align: center;
+        background-color:white;
+}
+ table{
+    background-color:aliceblue;
+    
+}
+
+th{
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+    text-align: center;
+} 

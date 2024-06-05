@@ -1,0 +1,45 @@
+
+<app-small-navber></app-small-navber>
+
+<section class="container">
+    <div class="row">
+        <div class="col-4">
+            <form (ngSubmit)="search()">
+                <div class="mb-3">
+                    <label for="customer_id" class="form-label">Customer Id</label>
+                    <input type="number" class="form-control" placeholder="Enter customer Id" id="customer_id"
+                        name="customer_id" [(ngModel)]="customer_id">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-8">
+            <table class="table stripe">
+
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Checkin Date</th>
+                    <th>CheckOut Date</th>
+                    <th>Total Bill</th>
+                    <th>Paid</th>
+                    <th>Due</th>
+                    <th>Action</th>
+                </tr>
+                <tr *ngFor="let i of getData">
+                    <td>{{i.name}}</td>
+                    <td>{{i.phone}}</td>
+                    <td>{{i.checkin}}</td>
+                    <td>{{i.checkout}}</td>
+                    <td>{{i.total_bill}}</td>
+                    <td>{{i.pay}}</td>
+                    <td>{{i.due}}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger" (click)="CheckOut()">CheckOut</button>
+                    </td>
+        
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>

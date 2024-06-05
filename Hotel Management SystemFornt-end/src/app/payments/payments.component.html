@@ -1,0 +1,118 @@
+
+
+
+<div>
+    <div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-7">
+                    <table class="table">
+                        <tr>
+                            <th>Name</th>
+                            <td></td>
+                            <th>Email</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td></td>
+                            <th>Passport</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>NID</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Checkin Date: </th>
+                            <td> {{checkin}} </td>
+                            <th>Checkout Date: </th>
+                            <td> {{checkout}} </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tr>
+                            <th>Room Rent</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Service Bills</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Day of Booking</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Payment Type</th>
+                            <td> <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="payment_type" id="inlineRadio1" value="bkash" [(ngModel)]="payment_type">
+                                <label class="form-check-label" for="inlineRadio1">Bkash</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="payment_type" id="inlineRadio2" value="nagad" [(ngModel)]="payment_type">
+                                <label class="form-check-label" for="inlineRadio2">Nagad</label>
+                              </div>
+                              <!-- <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                              </div> -->
+                              
+                                <ng-container *ngIf="payment_type === 'bkash'; then b;"></ng-container>
+                                <ng-template #b>
+                                    <p class="form-check-label">Marchant : 01516718442</p>
+                                </ng-template>
+                                <ng-container *ngIf="payment_type === 'nagad'; then n;"></ng-container>
+                                <ng-template #n>
+                                    <p class="form-check-label">Uddokta : 01796485178</p>
+                                </ng-template>
+                              
+                              <!-- {{payment_type}} -->
+                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Pay Ammount</th>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                               
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Tranjction Id</th>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                               
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Due Ammount</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            
+                            <td colspan="2">
+                                <button type="button" class="btn btn-outline-primary">Procide to pay</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{{roomReantShow.room_reant}}
+
+{{roomReantData | json}}

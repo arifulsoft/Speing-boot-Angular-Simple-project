@@ -1,0 +1,25 @@
+
+<app-small-navber></app-small-navber>
+
+    
+
+<h3 >Rooms Details</h3>
+<hr>
+<div class="row row-cols-1 row-cols-md-3 g-3 ">
+    <div class="col" *ngFor=" let i of getalldata">
+        <a type="button" (click)="single(i.room_number)">
+            <div class="card h-100 ">
+                <div class="container">
+                    <img src="{{i.img}}" class="card-img-top" alt="..." style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Room Number:{{i.room_number}}</h4>
+                    <h6 class="card-title"Room>Room type: {{i.service_type}}</h6>
+                    <!-- <h5 class="card-title">{{i.facility_id}}</h5> -->
+   
+                    <button type="button" class="btn btn-outline-warning" style="color: black;">Details</button>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+/* Container holding the image and the text */
+.container {
+	position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+
+
+  /* //ss */
+
+  .header_content
+{
+	width: 100%;
+	height: 100px;
+	padding-left: 62px;
+	padding-right: 62px;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	background-color:#0B3961;
+	
+}
+.header.scrolled .header_content
+{
+	height: 90px;
+}
+.logo
+{
+	width: 130px;
+	height: 41px;
+	border: solid 2px #ffffff;
+	text-align: center;
+}
+.logo a
+{
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #ffffff;
+	line-height: 37px;
+}
+.main_nav ul li:not(:last-of-type)
+{
+	margin-right: 49px;
+}
+.main_nav ul li a
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+}
+.main_nav ul li a:hover,
+.main_nav ul li.active a
+{
+	color: #ffa37b;
+}
+.book_button
+{
+	width: 152px;
+	height: 54px;
+	background: #ffa37b;
+	margin-left: 45px;
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.book_button:hover
+{
+	background: rgba(255,255,255,0.2);
+}
+.book_button:hover a
+{
+	color: #ffa37b;
+}
+.book_button a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 54px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+}
+.header_phone
+{
+	width: 190px;
+	height: 54px;
+	background: #ffa37b;
+	margin-left: 14px;
+}
+.header_phone span
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	margin-left: 9px;
+}
+.header_phone span::selection
+{
+	background: #ffffff;
+	color: #ffa37b;
+}
+.hamburger
+{
+	display: none;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.hamburger i
+{
+	font-size: 24px;
+	color: #ffffff;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.hamburger:hover i
+{
+	color: #ffa37b;
+}

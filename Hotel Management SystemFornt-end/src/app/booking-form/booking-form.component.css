@@ -1,0 +1,32 @@
+.bt{
+    margin-left: 50px;
+   
+}
+.hh{
+    background-color:aliceblue;
+    margin-top: 10px;
+}
+.ff{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: white;
+}
+
+.background_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.contai{
+    margin-top: 10px;
+	
+	
+
+}

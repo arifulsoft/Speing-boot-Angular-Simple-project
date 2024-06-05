@@ -1,0 +1,135 @@
+
+<app-small-navber></app-small-navber>
+<div class=" bb">
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-7">
+                    <!-- <h1> {{newCustomer.id}} </h1> -->
+                    <table class="table">
+                        <tr>
+                            <th>Name :</th>
+                            <td>{{customer.name}}</td>
+                            <th>Email :</th>
+                            <td>{{customer.email}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Adults Person :</th>
+                            <td>{{adult}}</td>
+                            <th>Child Person :</th>
+                            <td>{{child}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Phone Number :</th>
+                            <td>{{customer.phone}}</td>
+                            <th>Passport :</th>
+                            <td>{{customer.passport}}</td>
+                        </tr>
+                       
+                       
+                        <tr>
+                            <th>NID :</th>
+                            <td>{{customer.nid}}</td>
+                        </tr>
+                        <tr>
+                            <th>Checkin Date : </th>
+                            <td> {{checkin}} </td>
+                            <th>Checkout Date : </th>
+                            <td> {{checkout}} </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tr>
+                            <th>Room Rent : </th>
+                            <td> {{roomRentByDataId.room_reant}} </td>
+                        </tr>
+                        <tr>
+                            <th>Service Bills : </th>
+                            <td>{{roomRentByDataId.service_bill}} </td>
+                        </tr>
+                        <tr>
+                            <th>Day of Booking : </th>
+                            <td> {{totalDays}} </td>
+                            <!-- {{roomReantData.checkin - roomReantData.checkout }} -->
+                        </tr>
+
+                        <!-- id, room_no, room_reant, service_bill  -->
+                        <tr>
+                            <th>Total : </th>
+                            <td> {{(roomRentByDataId.room_reant)*totalDays + roomRentByDataId.service_bill}} </td>
+                        </tr>
+                        <tr>
+                            <th>Payment Type : </th>
+                            <td> <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="payment_type" id="inlineRadio1" value="bkash" [(ngModel)]="payment_type">
+                                <label class="form-check-label" for="inlineRadio1">Bkash</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="payment_type" id="inlineRadio2" value="nagad" [(ngModel)]="payment_type">
+                                <label class="form-check-label" for="inlineRadio2">Nagad</label>
+                              </div>
+                              <!-- <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                              </div> -->
+                              
+                                <ng-container *ngIf="payment_type === 'bkash'; then b;"></ng-container>
+                                <ng-template #b>
+                                    <p class="form-check-label">Marchant : 01516718442</p>
+                                </ng-template>
+                                <ng-container *ngIf="payment_type === 'nagad'; then n;"></ng-container>
+                                <ng-template #n>
+                                    <p class="form-check-label">Uddokta : 01796485178</p>
+                                </ng-template>
+                              
+                              <!-- {{payment_type}} -->
+                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Pay Ammount: </th>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                               
+                                <input type="text" class="form-control" aria-label="Sizing example input" name="pay" [(ngModel)]="pay">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Tranjction Id: </th>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                               
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="transaction_id" [(ngModel)]="transaction_id">
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Due Ammount: </th>
+                            <td>{{((roomRentByDataId.room_reant)*totalDays + roomRentByDataId.service_bill)-pay}}</td>
+                        </tr>
+                        <tr>
+                            
+                            <td colspan="2">
+                                <button type="button" (click)="procitToPayment()" class="btn btn-outline-primary">Procide to pay: </button>
+                                <div class="mb-3 col">
+                                    <button type="button" (click)="print()" class="btn btn-outline-primary">Print page </button>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+
+</div>
+
+
+
+<!-- {{room_reant | json}} -->

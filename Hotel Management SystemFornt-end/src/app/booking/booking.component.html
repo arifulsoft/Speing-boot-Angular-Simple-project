@@ -1,0 +1,54 @@
+<app-small-navber></app-small-navber>
+<section class="container rt">
+
+    <div class="row">
+        <div class="col-5">
+            <img src="{{booking.img}}" alt="" style="height: 400px; width: 500px;">
+        </div>
+        <div class="col-7 ct">
+            <h4 style="margin-left: 100px;">Disscriptions</h4>
+            <p> {{booking.l_disscriptions}} </p>
+            <h5>Rooms Number: {{booking.room_id}} </h5>
+            <h5>Rooms: {{booking.service_type}} </h5>
+        </div>
+    </div>
+
+    <div class="col-7 " style="margin-left: 538px;">
+        <button type="button" class="btn btn-outline-secondary booking" (click)="form()">Booking Now</button>
+    </div>
+
+</section>
+
+
+<section class="container">
+    <div class="row">
+        <div class="col-7">
+            <h2> {{booking.s_disscriptions}} </h2>
+            <p> {{booking.l_disscriptions}} </p>
+        </div>
+        <div class="col-5"></div>
+    </div>
+</section>
+
+<hr>
+<section class="container">
+
+<div class="row">
+    <div class="col-6">
+        <h4>Costomar Feedback</h4>
+        <h6 *ngFor="let a of feedback">
+            <h5>{{a.name}}</h5>
+            <p>{{a.massage}}</p>
+            
+        </h6>
+    </div>
+    <div class="col-6"></div>
+</div>
+    
+
+   
+
+
+</section>
+
+

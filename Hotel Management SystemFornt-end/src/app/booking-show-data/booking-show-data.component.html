@@ -1,0 +1,49 @@
+<section>
+    <div class="row">
+        <div class="col-6">
+            <h5>Search Details</h5>
+            <form (ngSubmit)="search()">
+                <div class="mb-3">
+                    <label for="customer_id" class="form-label">Customer Id</label>
+                    <input type="number" class="form-control" placeholder="Enter customer Id" id="customer_id"
+                        name="customer_id" [(ngModel)]="customer_id">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form><p></p>
+            <table class="table stripe">
+                <tr>
+                    <th> Checkin </th>
+                    <th>CheckOut</th>
+                    <th>Room Number</th>
+                    <th>Adults</th>
+                    <th>Child</th>
+                </tr>
+                <tr>
+                    <td>{{getData.checkin}}</td>
+                    <td>{{getData.checkout}}</td>
+                    <td>{{getData.room_number}}</td>
+                    <td>{{getData.adulat}}</td>
+                    <td>{{getData.child}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-6">
+            <table class="table stripe ">
+                <tr>
+                    <th> Checkin Date </th>
+                    <th>CheckOut Date</th>
+                    <th>Room number</th>
+                    <th>Adulat</th>
+                    <th>Child</th>
+                </tr>
+                <tr *ngFor="let p of check">
+                    <td>{{p.checkin}}</td>
+                    <td>{{p.checkout}}</td>
+                    <td>{{p.room_number}}</td>
+                    <td>{{p.adulat}}</td>
+                    <td>{{p.child}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>

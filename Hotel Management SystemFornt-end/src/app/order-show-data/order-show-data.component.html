@@ -1,0 +1,35 @@
+<app-small-navber></app-small-navber>
+
+
+<section>
+    <div class="row">
+        <div class="col-4">
+            <form (ngSubmit)="search()">
+                <div class="mb-3">
+                    <label for="customer_id" class="form-label">Customer Id</label>
+                    <input type="number" class="form-control" placeholder="Enter customer Id" id="customer_id"
+                        name="customer_id" [(ngModel)]="customer_id">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-8">
+            <table class="table stripe">
+                <tr>
+                    <th> Food Type </th>
+                    <th>Food Manu</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    
+                </tr>
+                <tr>
+                    <td>{{getData.f_type}}</td>
+                    <td>{{getData.f_menu}}</td>
+                    <td>{{getData.amount}}</td>
+                    <td>{{getData.date}}</td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
